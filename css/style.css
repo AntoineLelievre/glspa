@@ -1,0 +1,73 @@
+
+
+@media screen and (max-width:640px){
+    html{
+        margin: 0px; padding : 0px;
+    }
+    body{
+        background:#F4F7F6;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        margin: 0px; padding : 0px;
+    }
+    #menu{
+        background:#1e1e1e;
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        height: 8vh;
+        width: 100vw;
+    }
+    #banniere{
+        background : url("../img/158257091_116092520529485_2854931582697112998_o.jpg");
+        background-size: cover;  
+        width: 100%; height: 30vh;
+    }
+    #logo{
+        display:flex;
+        margin : 1vh;
+        width: 60vh;
+    }
+    #logo-circle{
+        background : url("../img/logo.png");
+        background-size: cover;  
+        width: 6vh;height: 6vh;
+    }
+    #logo #name{
+        color: #3989A2;
+        font-size: 6vh; 
+        font-family: 'Montserrat', sans-serif;
+        margin-left : 1vh;
+        margin-top:-0.5vh;
+    }
+    #burger_icon svg{
+        fill : white;
+        margin : 1vh; margin-right: 2vh;
+        width: 6vh;
+    }
+    h1,h2,h3,h4{
+        color: #3989A2;
+        font-size: 4vh; 
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    main{
+        min-height: 250px;
+        padding: 30px 30px;
+    }
+    main>p{
+        background: white;
+        border-radius: 10px;
+        padding : 10px ; 
+    }
+    iframe{
+        height: 50vh;
+        width: 100%;
+    }
+}
+@media screen and (min-width:640px){
+    #burger_icon{
+        visibility: hidden;
+        height: 0px; width: 0px;
+    }
+}    
