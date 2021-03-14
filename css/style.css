@@ -1,5 +1,85 @@
 
+html,body{
+    margin: 0px; padding : 0px;
+    width: 100%; height: 100%;
+    background:#F4F7F6;
+    overflow-x: hidden;
+}
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    background:#13120d;
+    color: #3989A2;
+    height: 100px; 
+    width: 100vw;
+    position: fixed;
+}
+#linelink{
+    display: flex;
+}
+#linelink div{
+    padding:20px;
+    padding-top: 16px;
+}
+#linelink div:hover{
+    color:white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#menu{
+    background:#333123;
+    position: fixed;
+    height: 100vh; width: 320px;
+    margin-top:-5px;
+    visibility: hidden;
+}
+#line{
+    display: flex;
+    justify-content: space-between;
+}
+#burger{
+    background:url("../img/burger.svg");
+    color:white;
+    margin:10px 10px;
+    width: 40px;height: 40px;
+}
+#logo{
+    display:flex;
+    margin-left: 60px;
+    min-width: 245px;
+}
+#logo-circle{
+    background : url("../img/logo.png");
+    background-size: cover;  
+    margin : 10px;
+    width: 180px;height: 180px;
+}
 
+#logo #name{
+    color: #3989A2;
+    font-size: 80px; 
+    font-style: italic;
+    font-weight: bolder;
+    margin : 2px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#accueil{
+    background : url("../img/158257091_116092520529485_2854931582697112998_o.jpg");
+    background-size: cover;  
+    color:white;
+    padding-top: 20vh;
+    height: 100vh;
+    width: 100vw;
+    font-size: x-large;
+}
+h1,h2,p{
+    margin:0 10vw;
+    text-align:center;
+}
+.hidden{
+    visibility: hidden;
+}
 @media screen and (max-width:640px){
     html{
         margin: 0px; padding : 0px;
@@ -15,8 +95,6 @@
         color:white;
         display: flex;
         justify-content: space-between;
-        height: 8vh;
-        width: 100vw;
     }
     #banniere{
         background : url("../img/158257091_116092520529485_2854931582697112998_o.jpg");
@@ -53,7 +131,6 @@
     }
     main{
         min-height: 250px;
-        padding: 30px 30px;
     }
     main>p{
         background: white;
