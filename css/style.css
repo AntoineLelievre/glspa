@@ -8,6 +8,12 @@ html{
 
     overflow-x: hidden;
 }
+a{
+    color: black;
+    text-decoration: none; 
+    transition: 0.4s;
+
+}
 header {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
@@ -36,7 +42,7 @@ main>*{
     transition: 0.4s;
     font-size: 22px;
 }
-#linelink div:hover{
+#linelink a:hover{
     color:#3989A2;
     cursor: pointer;
     transition: 0.4s;
@@ -126,20 +132,18 @@ main>*{
 }
 
 #back1 h1, h2{
-        /* background : url("../img/spa-gonflable.jpg");
-        background-size: cover; */
-        text-align: center;
-        background-color: #FFFFFF00;
-        color:white;
-        font-size: 70px;
-        margin-top:65px;
+    text-align: center;
+    background-color: #FFFFFF00;
+    color:white;
+    font-size: 70px;
+    margin-top:65px;
 }
 
-h2{
+h2, h3{
     font-family: 'Courgette', cursive;
 }
 
-h3{font-family: 'Courgette', cursive;
+h3{
     text-align:center;
     font-size: x-large;
     color:#3989A2;
@@ -154,20 +158,25 @@ h3{font-family: 'Courgette', cursive;
     display : flex;
     width: 80vw;
     justify-content: space-around;
+    
 }
-
-.line p {
+main{
+    font-size: 20px;
+}
+.text {
     background:white;
-    padding:25px;
+    padding:2vw;
     font-size: 20px;
     border-radius: 15px;
-    width: 500px;
-    margin : 0px;
+    width: 35vw; height: 26vw;
+    margin:0px;
 }
 .line .illu{
     background-image: url("../img/158407341_116093617196042_8859126130151640300_n.jpg");
     background-size: cover;
-    width: 300px;height: 300px;
+    width: 35vw; height: 30vw;
+    border-radius: 15px;
+
     
 }
 #install{
@@ -184,14 +193,22 @@ h3{font-family: 'Courgette', cursive;
 #install>div{
     background:hsla(0, 0%, 100%, 0.8);
     border:white solid 5px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin:2vw;
     position: relative;
     height: 40vh;
+    transition :0.4s;
     width: 25vw;
     z-index: 0;
 }
-
+#install>div:hover{
+    transition :0.4s;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+#install p{
+    padding:20px;
+}
 .num{
     position: absolute;
     height: 20px;
@@ -201,6 +218,11 @@ h3{font-family: 'Courgette', cursive;
     width: 9vw;
     margin: 0 8vw;
     bottom:10px;
+    transition :0.4s;
+}
+#install>div:hover .num{
+    color:#3989A2;
+    transition :0.4s;
 }
 iframe{
     margin: 5vh 10vw;
@@ -210,7 +232,7 @@ iframe{
 footer{
     background:#3989A2;
     width: 100vw;
-    height: 200px;
+    height: 80px;
 }
 #rs{
     background:url("https://www.facebook.com/images/fb_icon_325x325.png");
