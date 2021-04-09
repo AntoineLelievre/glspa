@@ -3,9 +3,9 @@ html,body{
     margin: 0px; padding : 0px;
     width: 100%; height: 100%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 html{
-
     overflow-x: hidden;
 }
 a{
@@ -25,6 +25,9 @@ header {
     top:0px;
     transition: 0.4s;
     z-index: 10;
+}
+#menuMob{
+    display: none;
 }
 main>*{
     background:#F4F7F6;
@@ -49,6 +52,7 @@ main>*{
 }
 #line{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 14px;
     justify-content: space-between;
 }
@@ -90,7 +94,7 @@ main>*{
     top:70px;left:40px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 2px 2px 5px #3989A2, 0 2px #3989A2;
-    font-family: sans; color: black;
+    color: black;
     transition: 0.4s;
 }
 .name_small{
@@ -145,7 +149,8 @@ h2, h3{
 
 h3{
     text-align:center;
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top:70px;
     color:#3989A2;
 }
 .hidden{
@@ -156,37 +161,45 @@ h3{
 }
 .line{
     display : flex;
+    flex-wrap: wrap;
     width: 80vw;
     justify-content: space-around;
-    
+    margin:0px 2vh;
 }
 main{
     font-size: 20px;
+    color:rgb(39, 37, 35);
 }
 .text {
     background:white;
-    padding:2vw;
-    font-size: 20px;
+    /* padding:2vw; */
+    padding : 0 20px 20px 20px;
+    font-size: 18px;
     border-radius: 15px;
-    width: 35vw; height: 26vw;
-    margin:0px;
+    width: 35vw;
+    min-width: 250px;
+    min-height: 20vw;
+    margin:auto;
 }
 .line .illu{
     background-image: url("../img/158407341_116093617196042_8859126130151640300_n.jpg");
     background-size: cover;
-    width: 35vw; height: 30vw;
+    width: 35vw; height: 24vw;
     border-radius: 15px;
+    min-width: 250px; min-height: 200px;
 
-    
+    margin:auto;
+
 }
 #install{
     background : url("../img/167105004_1132543060548284_4525035078824232811_n.jpg");
     background-size: cover;
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     margin-left:-20vw;
     background-attachment: fixed;
     display:flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10vw;
 }
@@ -196,9 +209,10 @@ main{
     border-radius: 15px;
     margin:2vw;
     position: relative;
-    height: 40vh;
+    height: 35vh;
+    min-width: 250px; min-height: 200px;
     transition :0.4s;
-    width: 25vw;
+    width: 20vw;
     z-index: 0;
 }
 #install>div:hover{
@@ -216,7 +230,7 @@ main{
     box-shadow: 0px 0px 10px 10px white;
     text-align: center;
     width: 9vw;
-    margin: 0 8vw;
+    margin: 0 5.5vw;
     bottom:10px;
     transition :0.4s;
 }
@@ -239,6 +253,45 @@ footer{
     background-size: cover;
     cursor: pointer;
     width: 50px;height: 50px;
+}
+@media screen and (max-width:640px){
+    #menuMob{
+        display: block;
+    }
+    #line{
+        visibility: hidden;
+    }
+    .content, footer{
+        padding: 10px;
+    }
+    .text {
+        font-size: 18px;
+        border-radius: 15px;
+        width: 100%;
+        min-width: 250px;
+        min-height: 250px;
+        margin:50px auto;
+    }
+    #install{
+        background : url("../img/167105004_1132543060548284_4525035078824232811_n.jpg");
+        background-size: cover;
+        height: initial;
+        width: 100vw;
+    }
+    header{
+        display: flex;
+        height: 20px; 
+        position: initial;
+        top:0px;
+        transition: 0.4s;
+        z-index: 10;
+    }
+    #back1{
+        background : url("../img/mobile1.png");
+        background-size: cover;
+        background-attachment: fixed;
+        height: 70vh;
+    }
 }
 /* @media screen and (max-width:640px){
     html{
